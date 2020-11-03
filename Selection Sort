@@ -1,0 +1,15 @@
+vals = []
+n = int(input("Enter the range "))
+for i in range(n):
+    x = int(input("Enter the no. "))
+    vals.append(x)
+for i in range(0,n):
+    minpos = i
+    for j in range(i,n):
+        if vals[j] < vals[minpos]:
+            minpos = j
+
+        temp = vals[i]
+        vals[i] = vals[minpos]
+        vals[minpos] = temp
+print(vals)
