@@ -1,0 +1,7 @@
+vals = []
+n  = int(input("Enter the range "))
+for i in range(n):
+    x = int (input("Enter the no. "))
+    vals.append(x)
+vals.sort()
+print(vals[-2]) 
