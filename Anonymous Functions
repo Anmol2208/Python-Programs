@@ -1,0 +1,17 @@
+from functools import reduce
+num = []
+n = int(input("Enter the length "))
+for i in range(n):
+    x = int(input("Enter the nos. "))
+    num.append(x)
+print(num)
+
+x = list(filter(lambda a: a%2 ==0,num))
+print("After filter ",x)
+
+y = list(map(lambda b: b*2, num))
+print("After mapping ",y)
+
+z = reduce(lambda c,d: c+d, num)
+print("After reducing ",z)
+
