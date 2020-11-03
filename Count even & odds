@@ -1,0 +1,17 @@
+n = int(input("Enter the length of list "))
+list = []
+for i in range(n):
+    x= int(input("Enter the no. "))
+    list.append(x)
+print(list)
+count_even =0
+count_odd =0
+for i in list:
+    if i%2 ==0:
+        count_even+=1
+    else:
+        count_odd += 1
+print()
+print("counts of even ",count_even)
+print("counts of odd ",count_odd)
+print("Even is {} and odd is {}".format(count_even,count_odd))
