@@ -1,0 +1,26 @@
+def bin(vals, search):
+    beg = 0
+    end = len(vals)-1
+    while beg <= end:
+        mid = (beg + end) // 2
+        if vals[mid] == search:
+            globals()['pos'] = mid
+            return True
+        elif vals[mid] > search:
+            end = mid-1
+        else:
+            beg = mid +1
+    return False
+
+vals = []
+n = int(input("Enter the range "))
+for i in range(n):
+    x = int(input("Enter the no. "))
+    vals.append(x)
+
+search = int(input("Enter the no. to be searched "))
+pos = -1
+if bin(vals, search) == True:
+    print("Found at ", pos+1)
+else:
+    print("Not Found")
