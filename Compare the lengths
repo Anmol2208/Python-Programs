@@ -1,0 +1,12 @@
+list = []
+x = int(input("Enter the no. of names "))
+for i in range(x):
+    y = (input("Enter the names "))
+    list.append(y)
+print(list)
+
+for i in list:
+    if len(i) > 5:
+        print("You have got a big name")
+    else:
+        print("Your name is small and below 6 letters")
