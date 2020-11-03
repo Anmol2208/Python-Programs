@@ -1,0 +1,14 @@
+vals = []
+n = int(input("Enter a no. "))
+for i in range(n):
+    x = int(input("Enter the no. "))
+    vals.append(x)
+m = max(vals)
+vals.remove(m)
+count = 0
+while(count < 3):
+    
+    c = max(vals)
+    print(c)
+    vals.remove(c)
+    count +=1
