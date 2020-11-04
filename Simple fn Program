@@ -1,0 +1,8 @@
+def fun(n,n1,n2):
+  for i in range(n):
+    print ((n1+n2)+i)
+
+n = int(input())
+n1 = int(input("Enter 1st no."))
+n2 = int(input("Enter 2nd no."))
+fun(n,n1,n2)
