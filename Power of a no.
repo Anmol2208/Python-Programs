@@ -1,0 +1,16 @@
+def power(base, exp):
+  result= 1
+  if((base > 0) and (exp ==0)):
+    result = 1
+  elif((base == 0) and (exp >=0)):
+    result = 0
+  else:
+    for i in range(exp):
+      result = base * result 
+  
+  return result
+
+base = int(input("Enter base no."))
+exp = int(input("Enter expo no."))
+res = power(base, exp)
+print(res)
