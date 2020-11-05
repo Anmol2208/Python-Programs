@@ -1,0 +1,9 @@
+from collections import deque
+vals = []
+n = int(input("Enter your desired length "))
+for i in range(n):
+  x = int(input("Enter your no. "))
+  vals.append(x)
+d=deque(vals)
+d.rotate(2)
+print(d)
