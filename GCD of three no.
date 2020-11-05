@@ -1,0 +1,18 @@
+def gcd(n1,n2):
+  min = 0
+  if(n1<n2):
+    min = n1
+  else:
+    min = n2
+  while(min >=1):
+    if((n1 % min == 0) and(n2 % min ==0)):
+      return min
+    else:
+      min -=1
+
+
+n1 = int(input())
+n2 = int(input())
+n3 = int(input())
+res = gcd(n1,n2)
+print(gcd(res,n3))
