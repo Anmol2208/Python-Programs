@@ -1,10 +1,11 @@
-from array import *
-vals = array('i',[])
-num = int(input("Enter the length of array "))
-for i in range(num):
-    x = int(input("Enter next value "))
-    vals.append(x)
-y = int(input("Enter a no. to be searched "))
+vals = []
+n = int(input("Enter your desired length "))
+for i in range(n):
+  x = int(input("Enter your no. "))
+  vals.append(x)
+search = int(input("Enter no. to be searched "))
 for i in vals:
-    if(y==i):
-        print("No. found at ",vals.index(i))
+  if i == search:
+    print("found at ",vals.index(i))
+else:
+  print("Not found")
