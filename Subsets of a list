@@ -1,0 +1,13 @@
+import itertools 
+  
+def subsets(s, n): 
+    return list(itertools.combinations(s, n)) 
+   
+vals = []
+n = int(input("Enter your desired length "))
+for i in range(n):
+  x = int(input("Enter your no. "))
+  vals.append(x) 
+n = int(input("Enter your subset no. "))
+  
+print(subsets(vals, n))
