@@ -1,0 +1,11 @@
+def rotate(vals, r):
+  return vals[r:] + vals[:r]
+
+vals = []
+n = int(input("Enter your desired length "))
+for i in range(n):
+  x = int(input("Enter your no. "))
+  vals.append(x)
+r = int(input("Enter your rotation no. "))
+c =rotate(vals,r)
+print(c)
