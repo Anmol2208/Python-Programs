@@ -1,0 +1,6 @@
+n = input("Enter sentence ")
+m = input("Enter word ")
+if(m in n):
+  print("found at",n.index(m))
+else:
+  print("Not Found")
