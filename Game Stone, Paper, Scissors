@@ -1,0 +1,36 @@
+import random
+print("Welcome to the game of  Stone, paper, Scissor, Thread")
+print()
+print("1- Stone , 2- paper, 3- Scissor, 4- Thread ")
+print()
+n = int(input("Choose wisely "))
+print()
+shuffle = random.choice([1,2,3,4])
+print("Cpu has choosen ",shuffle)
+print()
+
+if(n ==shuffle):
+    print("oh it's a tie")
+
+elif((n == 1) and (shuffle == 2) or (shuffle == 4)):
+  print("You Loose")
+elif((n == 1) and (shuffle == 3)):
+  print("You Win")
+
+
+elif((n == 2) and (shuffle == 3) or (shuffle == 4)):
+  print("You Loose")
+elif((n == 2) and (shuffle == 1)):
+  print("You Win")
+
+
+elif((n == 3) and (shuffle == 2) or (shuffle == 4)):
+  print("You Win")
+elif((n == 3) and (shuffle == 1)):
+  print("You Loose")
+
+  
+elif((n == 4) and (shuffle == 2) or (shuffle == 1)):
+  print("You Win")
+elif((n == 4) and (shuffle == 3)):
+  print("You Loose")
