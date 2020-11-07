@@ -1,0 +1,7 @@
+n = input("Enter a letter ")
+m = ord(n)
+print("It's num/ASCII value is: ",m)
+print()
+x = int(input("Enter a no. "))
+y = chr(x)
+print("It's Alphabetic value is: ",y)
