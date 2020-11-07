@@ -1,0 +1,16 @@
+vals = []
+n = int(input("Enter your desired length "))
+for i in range(n):
+  x = int(input("Enter your no. "))
+  vals.append(x)
+left_sum = 0
+right_sum = 0
+mid = n//2
+for i in range(0,mid):
+  left_sum = left_sum+vals[i]
+for i in range(mid,n):
+  right_sum = right_sum+vals[i]
+if(left_sum == right_sum):
+  print("Equal") 
+else:
+  print("Not Equal")
