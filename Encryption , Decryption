@@ -1,0 +1,6 @@
+n = input("Enter a word ")
+e =int(input("Enter a no. "))
+for i in n:
+  x = ord(i)+e
+  res = chr(x)
+  print(res, end = "")
