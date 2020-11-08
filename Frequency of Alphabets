@@ -1,0 +1,11 @@
+def freq(a):
+  dict = {}
+  for i in a:
+    if i in dict:
+      dict[i] +=1
+    else:
+      dict[i] = 1
+  return(dict)
+
+a = input()
+print(freq(a))
