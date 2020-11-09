@@ -1,1 +1,8 @@
-
+a =input("Enter 1st word: ")
+b =input("Enter 2nd word: ")
+c= sorted(a)
+d= sorted(b)
+if(c == d):
+  print("Anagram")
+else:
+  print("Non-Anagram")
