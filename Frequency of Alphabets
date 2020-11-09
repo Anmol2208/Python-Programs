@@ -1,11 +1,9 @@
-def freq(a):
-  dict = {}
-  for i in a:
-    if i in dict:
-      dict[i] +=1
-    else:
-      dict[i] = 1
-  return(dict)
-
-a = input()
-print(freq(a))
+n =input("Enter the word: ")
+dict = {}
+for i in n:
+  if i in dict:
+    dict[i]+=1
+  else:
+    dict[i] =1
+for key, val in dict.items():
+    print(key, val)
