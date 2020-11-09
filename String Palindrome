@@ -1,0 +1,6 @@
+n =input("Enter the word: ")
+m = "".join(reversed(n))
+if(n == m):
+  print("Palindrome")
+else:
+  print("Non- Palindrome")
