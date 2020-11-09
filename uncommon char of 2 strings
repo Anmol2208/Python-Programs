@@ -1,0 +1,12 @@
+a =input("Enter 1st word: ")
+b =input("Enter 2nd word: ")
+
+res = set(a).symmetric_difference(b)
+print("Uncommon Char are: ", res)
+
+count =0
+for i in a:
+  for j in b:
+    if i == j:
+      count+=1
+print("common char are: ", count)
